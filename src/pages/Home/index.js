@@ -1,54 +1,35 @@
-import styles from './Home.module.scss';
-import logo from '../../assets/logo-rok.png';
 import Header from 'components/Header';
-
-const categorias = [
-    {
-        nome: 'Heros',
-        thumbnail: herosThumb,
-        header: herosHeader,
-        id: 'heros',
-        descricao: 'Os mais poderosos heróis para você desenvolver'
-    }, 
-    {
-        nome: 'Dragons',
-        thumbnail: dragonsThumb,
-        header: dragonsHeader,
-        id: 'dragons',
-        descricao: 'Os monstros estão prontos para queimar e devorar'   
-    }, 
-    {
-        nome: 'Arqueiros',
-        thumbnail: arqueirosThumb,
-        header: arqueirosHeader,
-        id: 'arqueiros',
-        descricao: 'Desenvolva seu poder militar com arqueiros poderosos!'
-    },
-    {
-        nome: 'Infantaria',
-        thumbnail: infantariaThumb,
-        header: infantariaHeader,
-        id: 'infantaria',
-        descricao: 'Desenvolva seu poder militar com a infantaria que produz mais dano!'
-    },
-    {
-        nome: 'Cavalaria',
-        thumbnail: cavalariaThumb,
-        header: cavalariaHeader,
-        id: 'cavalaria',
-        descricao: 'Desenvolva seu poder militar com a cavalaria!'
-    }
-]
+import styles from './Home.module.scss';
+import logo from 'assets/logo-rok.png';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 export default function Home() {
-    <>
-        <Header
-            titulo='Itens de ROK'
-            descricao='Compre e pesquise as melhores skills de ROK'
-            imagem={logo}
-            className={styles.header}
-        />
-        
-    </>
+  const navigate = useNavigate();
+  const categorias = useSelector(state => state.categorias);
+  return (
+    <div>
+      <Header
+        titulo='Wiki & Sale ROK'
+        descricao='As melhores e mais baratas skills de Rise Of The Kings'
+        imagem={logo}
+        className={styles.header}
+      />
+      <div className={styles.categorias}>
+        <div className={styles['categorias-title']}>
+          <h1>
+            Categorias
+          </h1>
+        </div>
+        <div className={styles['categorias-container']}>
+          {categorias.map((categoria, index) => (
+            <div key={index} onClick={() => navigate(`/categoria/${categoria.id}`)}>
+              <img src={categoria.thumbnail} alt={categoria.nome} />
+              <h1>{categoria.nome}</h1>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
 }
-
