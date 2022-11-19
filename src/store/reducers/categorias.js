@@ -14,31 +14,31 @@ const initialState = [{
   nome: 'Heros',
   thumbnail: heroThumb,
   header: heroHeader,
-  id: 'eletronicos',
+  id: 'heros',
   descricao: 'Os mais poderosos heróis para você desenvolver'
 }, {
   nome: 'Dragons',
   thumbnail: drgThumb,
   header: drgHeader,
-  id: 'automotivos',
+  id: 'dragao',
   descricao: 'Os monstros estão prontos para queimar e devorar'
 }, {
   nome: 'Arqueiros',
   thumbnail: arqThumb,
   header: arqHeader,
-  id: 'jogos',
+  id: 'arqueiro',
   descricao: 'Desenvolva seu poder militar com arqueiros poderosos!'
 }, {
   nome: 'Infantaria',
   thumbnail: infantariaThumb,
   header: infantariaHeader,
-  id: 'escritorio',
+  id: 'infantaria',
   descricao: 'Desenvolva seu poder militar com a infantaria que produz mais dano!'
 }, {
   nome: 'Cavalaria',
   thumbnail: cavalariaThumb,
   header: cavalariaHeader,
-  id: 'som',
+  id: 'cavalaria',
   descricao: 'Desenvolva seu poder militar com a cavalaria!'
 }];
 
