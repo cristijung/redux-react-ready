@@ -8,18 +8,18 @@ import sombraDragao from 'assets/itens/d1.png';
 import tempestadeDragao from 'assets/itens/d2.png';
 import douradoDragao from 'assets/itens/d3.png';
 import geloDragao from 'assets/itens/d4.png';
-import jogo1 from 'assets/itens/jogo-1.png';
-import console2 from 'assets/itens/console-2.png';
-import manete from 'assets/itens/manete.png';
-import jogo2 from 'assets/itens/jogo-2.png';
-import caderno from 'assets/itens/caderno.png';
-import cadeira from 'assets/itens/cadeira.png';
-import organizadorPastas from 'assets/itens/organizador-pastas.png';
-import papel from 'assets/itens/papel.png';
-import tv60 from 'assets/itens/tv-60.png';
-import caixaSom from 'assets/itens/caixa-som.png';
-import caixaSomBluetooth from 'assets/itens/caixa-som-bluetooth.png';
-import miniSystem from 'assets/itens/mini-system.png';
+import arqUm from 'assets/itens/a1.png';
+import arqDois from 'assets/itens/a2.png';
+import arqTres from 'assets/itens/a3.png';
+import arqQuatro from 'assets/itens/a4.png';
+import infUm from 'assets/itens/i1.png';
+import infDois from 'assets/itens/i2.png';
+import infQuatro from 'assets/itens/i4.png';
+import infTres from 'assets/itens/i3.png';
+import cavaUm from 'assets/itens/c1.png';
+import cavaDois from 'assets/itens/c2.png';
+import cavaTres from 'assets/itens/c3.png';
+import cavaQuatro from 'assets/itens/c4.png';
 
 
 const initialState = [{
@@ -87,97 +87,97 @@ const initialState = [{
   id: uuid(),
   categoria: 'dragao'
 }, {
-  titulo: 'Jogo para console',
-  descricao: 'Embarque em uma jornada épica e comovente e lute contra queles que desafiam o destino que anseia por conhecimento para ajudá-lo a entender a profecia e o papel que ele desempenhará. Você deve decidir se será acorrentado pelo medo de repetir seus erros ou se libertar de seu passado para ser o pai que precisa.',
-  foto: jogo1,
+  titulo: 'Arqueira Batedora lv.13',
+  descricao: 'Arqueira Mágica possui habilidades elevadas para ataque efetivo em muros de castelo e ataque à distância para infantaria com lança. Poder de ataque 594 + 10 de mágica',
+  foto: arqUm,
   favorito: false,
-  preco: 299.90,
+  preco: 5299.90,
   id: uuid(),
   categoria: 'arqueiro'
 }, {
-  titulo: 'Console',
-  descricao: 'Menor e mais elegante de todos os tempos. Com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital e também possui os melhores serviços para jogadores de todos os tipos.',
-  foto: console2,
+  titulo: 'Arqueira Batedora lv.12',
+  descricao: 'Arqueira Montada possui habilidades elevadas para ataque efetivo em muros de castelo e ataque à distância para infantaria com lança. Poder de ataque 433 + 6 de estrela',
+  foto: arqDois,
   favorito: false,
-  preco: 4349,
+  preco: 3569.99,
   id: uuid(),
   categoria: 'arqueiro'
 }, {
-  titulo: 'Controle joystick sem fio',
-  descricao: 'Este controle combina funções revolucionárias, preservando precisão, conforto e exatidão em cada movimento. Graças à sua ergonomia especialmente projetada para a posição da sua mão, você pode passar horas jogando com total conforto.',
-  foto: manete,
+  titulo: 'Arqueira Batedora lv.11',
+  descricao: 'Arqueira Phenix possui habilidades elevadas para ataque efetivo em muros de castelo e ataque à distância para infantaria com lança. Poder de ataque 369 + 5 de estrela',
+  foto: arqTres,
   favorito: false,
-  preco: 279,
+  preco: 2279.75,
   id: uuid(),
   categoria: 'arqueiro'
 }, {
-  titulo: 'Jogo para console',
-  descricao: 'Em sua mais nova aventura um adolescente está se ajustando a sua nova casa mas quando uma luta feroz pelo poder ameaça destruir sua nova casa, o aspirante a herói percebe que com grandes poderes, também deve vir uma grande responsabilidade para salvar toda a Nova Iorque deve assumir o manto de herói.',
-  foto: jogo2,
+  titulo: 'Arqueiro Batedor lv.10',
+  descricao: 'Arqueiro Bestial possui habilidades elevadas para ataque efetivo em muros de castelo e ataque à distância para infantaria com lança. Poder de ataque 260 + 5 de estrela',
+  foto: arqQuatro,
   favorito: false,
-  preco: 349.90,
+  preco: 1049.90,
   id: uuid(),
   categoria: 'arqueiro'
 },  {
-  titulo: 'Caderno Inteligente',
-  descricao: 'Caderno inteligente com calendário, elástico para caneta e divisórias Formato: 215 x 280 mm (lxa) Com 60 folhas pautadas e 20 folhas lisas brancas de 90 gramas que você tira e coloca quando quiser Fabricado com muito cuidado e atenção aos detalhes',
-  foto: caderno,
+  titulo: 'Homem Lança lv.13',
+  descricao: 'Soldado Mágico possui habilidades elevadas para ataque efetivo corpo a corpo e contra lanceiros e arqueiros. Poder de ataque 530 + 10 de mágica',
+  foto: infUm,
   favorito: false,
-  preco: 285,
+  preco: 4285.56,
   id: uuid(),
   categoria: 'infantaria'
 }, {
-  titulo: 'Cadeira de Escritório',
-  descricao: 'Base giratória em 360º de polipropileno com 5 rodízios;Ajuste de altura a gás;Encosto com estrutura de madeira com estofamento revestido em couro PU;Assento com madeira multi laminada com estofamento revestido em couro PU;Braços em polipropileno com estofamento revestido em couro PU; Espuma com densidade controlada.',
-  foto: cadeira,
+  titulo: 'Homem Lança lv.12',
+  descricao: 'Soldado Alado possui habilidades elevadas para ataque efetivo corpo a corpo e contra lanceiros e arqueiros. Poder de ataque 165 + 6 de estrela',
+  foto: infDois,
   favorito: false,
-  preco: 629,
+  preco: 3028.88,
   id: uuid(),
   categoria: 'infantaria'
 }, {
-  titulo: 'Papel Sulfite A4 75g 500 folhas',
-  descricao: 'Desenvolvido para ser utilizado em atividades escolares e profissionais corte perfeito e equilibrada absorção, permite melhor deslizamento do papel na impressora. Produzido com eucalipto 100% renovável e as fibras são tratadas para obter o mais elevado grau de brancura. Chamex garante excelente performance em equipamentos e impressoras de alta velocidade, com 99% de não atolamento das folhas em sua impressora.',
-  foto: papel,
+  titulo: 'Homem Lança lv.11',
+  descricao: 'Lanceiro Batedor possui habilidades elevadas para ataque efetivo corpo a corpo e contra lanceiros e arqueiros. Poder de ataque 324 + 5 de estrela',
+  foto: infTres,
   favorito: false,
-  preco: 27.60,
+  preco: 2227.68,
   id: uuid(),
   categoria: 'infantaria'
 }, {
-  titulo: 'Arquivo Estreito com Furação',
-  descricao: 'Ideal para a organização de pastas e papéis. Organize seus documentos e pastas suspensas em um só lugar, poupando espaço em gavetas. Possui encaixe para acomodas as pastas sem amassar. Contém furos para ventilação do organizador e design diferenciado. Organiza e deixa seu ambiente mais bonito.',
-  foto: organizadorPastas,
+  titulo: 'Homem Lança lv.10',
+  descricao: 'Lanceiro de Espada possui habilidades elevadas para ataque efetivo corpo a corpo e contra lanceiros e arqueiros. Poder de ataque 109 + 5 de estrela',
+  foto: infQuatro,
   favorito: false,
   preco: 44.90,
   id: uuid(),
   categoria: 'infantaria'
 },  {
-  titulo: 'Smart TV 60" 4K UHD',
-  descricao: 'Smart TV LG 60" 4K UHD WiFi Bluetooth Inteligência Artificial, Painel de Controle, Processamento Natural de Linguagem, AI Recommendation, Otimizador de Games, Channels, Edição Inteligente de Apps e Media Player.',
-  foto: tv60,
+  titulo: 'Lanceiro lv.13',
+  descricao: 'Lanceiro Mágico possui habilidades elevadas para ataque efetivo corpo a corpo e contra batedores. Poder de ataque 554 + 10 de mágica',
+  foto: cavaUm,
   favorito: false,
-  preco: 3359,
+  preco: 5359,
   id: uuid(),
   categoria: 'cavalaria'
 }, {
-  titulo: 'Caixa de Som',
-  descricao: 'A caixa de som 710 à prova de respingos transforma seu próximo evento em uma verdadeira festa, show ou balada. Show de luzes único e colorido sincronizado com seu aparelho de celular. Botões minimalistas e intuitivos no painel superior e o aplicativo permitem criar experiências musicais e visuais de alto nível. Com luzes estroboscópicas piscantes personalizáveis e o som incrível do conjunto duplo de tweeters e woofers ricos em graves.',
-  foto: caixaSom,
+  titulo: 'Lanceiro lv.12',
+  descricao: 'Lanceiro Alado possui habilidades elevadas para ataque efetivo corpo a corpo e contra batedores. Poder de ataque 412 + 6 de estrela',
+  foto: cavaDois,
   favorito: false,
-  preco: 5817.33,
+  preco: 4817.33,
   id: uuid(),
   categoria: 'cavalaria'
 }, {
-  titulo: 'Caixa de Som Bluetooth',
-  descricao: 'Caixa de som oferece o ousado som com driver de longa excursão otimizado, tweeter separado e dois radiadores de graves. Até 20 horas de reprodução e um prático powerbank para manter carregados os dispositivos que fazem a festa a noite toda.',
-  foto: caixaSomBluetooth,
+  titulo: 'Lanceiro lv.11',
+  descricao: 'Lanceiro Batedor possui habilidades elevadas para ataque efetivo corpo a corpo e contra batedores. Poder de ataque 308 + 5 de estrela',
+  foto: cavaTres,
   favorito: false,
   preco: 1199,
   id: uuid(),
   categoria: 'cavalaria'
 }, {
-  titulo: 'Mini System com Função karaokê',
-  descricao: 'Moderno e superpotente, o Mini System vai reproduzir suas músicas com qualidade máxima nos mais diversos formatos, como MP3, WMA CD, CD-R e CD-RW. E, se a ideia for promover festas e encontros animados, a função karaokê, a conexão Bluetooth e as duas portas USB serão bastante úteis.',
-  foto: miniSystem,
+  titulo: 'Lanceiro lv.10',
+  descricao: 'Lanceiro de Espada possui habilidades elevadas para ataque efetivo corpo a corpo e contra batedores. Poder de ataque 237 + 5 de estrela',
+  foto: cavaQuatro,
   favorito: false,
   preco: 782.91,
   id: uuid(),
