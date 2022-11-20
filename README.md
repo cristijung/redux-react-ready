@@ -19,7 +19,7 @@ Vs 1.1
 ## Scripts
 
 Para rodar o projeto, não esqueça antes de instalar as dependências:
-### 'npm i'
+### `npm i`
 
 Depois:
 ### `npm start`
