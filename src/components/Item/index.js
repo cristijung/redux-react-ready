@@ -20,7 +20,7 @@ const iconeProps = {
 
 const quantidadeProps = {
   size: 32,
-  color: '#1875E8'
+  color: '	#4682B4'
 }
 
 export default function Item(props) {
@@ -87,7 +87,7 @@ export default function Item(props) {
               )
               : (<FaCartPlus
                 {...iconeProps}
-                color={estaNoCarrinho ? '#1875E8' : iconeProps.color}
+                color={estaNoCarrinho ? '#444' : iconeProps.color}
                 className={styles['item-acao']}
                 onClick={resolverCarrinho}
               />)
