@@ -1,8 +1,12 @@
 # Projeto React Redux
 ## Estrutura de Layout prévia para clonar ou download
 
-
+Vs 1
 ![tela](https://user-images.githubusercontent.com/17149877/202782501-86268b31-9805-467b-8599-d5a59641d051.png)
+
+Vs 1.1
+![1](https://user-images.githubusercontent.com/17149877/202910978-921b8aea-9844-4fa0-9106-f7a880014959.jpg)
+
 
 ## Não é necessário usar as mesmas cores, tema e imagens.
 - Ao clonar, se deseja pode alterar o tema;
