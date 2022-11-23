@@ -74,14 +74,14 @@ export default function Item(props) {
                     {...quantidadeProps}
                     onClick={() => {
                       if(quantidade >= 1) {
-                        dispatch(mudarQuantidade({ id, quantidade: -1 }));
+                        dispatch(mudarQuantidade({ id, quantidade: -1 })); 
                       }
                     }}
                   />
-                  <span>{String(quantidade || 0).padStart(2, '0')}</span>
+                  <span>{String(quantidade || 0).padStart(2, '0')}</span> {/**padStart - função método para colocar as coisas no começo */}
                   <AiFillPlusCircle
                     {...quantidadeProps}
-                    onClick={() => dispatch(mudarQuantidade({ id, quantidade: +1 }))}
+                    onClick={() => dispatch(mudarQuantidade({ id, quantidade: +1 }))} 
                   />
                 </div>
               )

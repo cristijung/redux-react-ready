@@ -4,15 +4,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import Item from 'components/Item';
 import { resetarCarrinho } from 'store/reducers/carrinho';
 
+//calculo do total
 export default function Carrinho() {
   const dispatch = useDispatch();
   const { carrinho, total } = useSelector(state => {
     let total = 0;
-    const regexp = new RegExp(state.busca, 'i');
+    const regexp = new RegExp(state.busca, 'i'); //regex de novo
     const carrinhoReduce = state.carrinho.reduce((itens, itemNoCarrinho) => {
       const item = state.itens.find(item => item.id === itemNoCarrinho.id);
       total += (item.preco * itemNoCarrinho.quantidade);
-      if (item.titulo.match(regexp)) {
+      if (item.titulo.match(regexp)) { //condicional de busca para o carrinho
         itens.push({
           ...item,
           quantidade: itemNoCarrinho.quantidade,

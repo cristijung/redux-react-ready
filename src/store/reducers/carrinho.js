@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = [];
-
+//aqui são as actions
+//mudarCarrinho
+//mudarQuantidade ----- são actions
 const carrinhoSlice = createSlice({
   name: 'carrinho',
   initialState,

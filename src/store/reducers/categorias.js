@@ -42,6 +42,8 @@ const initialState = [{
   descricao: 'Desenvolva seu poder militar com a cavalaria!'
 }];
 
+//criação da slice
+//sempre em INGLÊS  -- AGORA É PALAVRA RESERVADA
 const categoriasSlice = createSlice({
   name: 'categorias',
   initialState,
