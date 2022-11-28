@@ -12,6 +12,7 @@ Vs 1.1
 - React --> (https://reactjs.org/) 
 - React Redux --> (https://react-redux.js.org/)
 - React Hook Form --> (https://react-hook-form.com/)
+- Sass --> (https://sass-lang.com/) 
 
 
 ## Acessórios
