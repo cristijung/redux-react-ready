@@ -14,6 +14,9 @@ Vs 1.1
 - React Hook Form --> (https://react-hook-form.com/)
 
 
+## Acessórios
+- Redux DevTools - extensão
+
 ## Scripts
 
 Para rodar o projeto, não esqueça antes de instalar as dependências:
