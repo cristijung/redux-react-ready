@@ -18,6 +18,9 @@ Vs 1.1
 ## Acessórios
 - Redux DevTools - extensão
 
+![7777](https://user-images.githubusercontent.com/17149877/204332301-d4171556-acd0-466a-9f07-36ea327eb8e7.jpg)
+
+
 ## Scripts
 
 Para rodar o projeto, não esqueça antes de instalar as dependências:
