@@ -1,7 +1,9 @@
+import Button from "components/Button";
 import Header from "components/Header";
 import styles from './Anuncie.module.scss';
 import { useSelector } from "react-redux";
-import categorias from "store/reducers/categorias";
+
+
 
 export default function Anuncie() {
     const categorias = useSelector(state => state.categorias.map(({nome, id}) => ({nome, id})));
@@ -12,7 +14,7 @@ export default function Anuncie() {
         titulo='Anuncie aqui'
         descricao='Anuncie aqui a sua skill no melhor site de troca de ROK'
        />
-       <form className={styles.fotmulario}>
+       <form className={styles.formulario}>
         <input placeholder='Nome da Skill' alt='Nome da skill' />
         <input placeholder='Descrição da Skill' alt='descrição da skill' />
         <input placeholder='URL da imagem da skill' alt='url da imagem da skill' />
@@ -25,7 +27,9 @@ export default function Anuncie() {
             ))}
         </select>
         <input type='number' placeholder='Preço da skill' />
-        <button type='submit'>Cadastrar Skill</button>
+        <Button type='submit'>
+            Cadastrar Skill
+        </Button>
        </form>
         </>
     )

@@ -8,13 +8,11 @@ Vs 1.1
 ![1](https://user-images.githubusercontent.com/17149877/202910978-921b8aea-9844-4fa0-9106-f7a880014959.jpg)
 
 
-## Não é necessário usar as mesmas cores, tema e imagens.
-- Ao clonar, se deseja pode alterar o tema;
-- Este layout template é só para agilizar a aplicação do Redux;
-- Será possível editar as imagens e cores, mas não a funcionalidade;
+## Tecnologias usadas
+- React --> (https://reactjs.org/) 
+- React Redux --> (https://react-redux.js.org/)
+- React Hook Form --> (https://react-hook-form.com/)
 
-## Este projeto será feito em etapas e no último dia estará completo
-- O projeto será desenvolvido em duplas, pois ele será usado como Homework da semana.
 
 ## Scripts
 
