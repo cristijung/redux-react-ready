@@ -11,7 +11,9 @@ Vs 1.1
 ## Tecnologias usadas
 - React --> (https://reactjs.org/) 
 - React Redux --> (https://react-redux.js.org/)
+- Redux ToolKit --> (https://redux-toolkit.js.org/)
 - React Hook Form --> (https://react-hook-form.com/)
+- Immer --> (https://immerjs.github.io/immer/) 
 - Sass --> (https://sass-lang.com/) 
 
 

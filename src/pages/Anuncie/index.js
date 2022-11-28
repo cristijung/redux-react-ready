@@ -26,9 +26,9 @@ export default function Anuncie() {
         descricao='Anuncie aqui a sua skill no melhor site de troca de ROK'
        />
        <form className={styles.formulario} onSubmit={handleSubmit(cadastrar)}>
-        <input {...register('nome', { required: true })} placeholder='Nome da Skill' alt='Nome da skill' />
+        <input {...register('titulo', { required: true })} placeholder='Nome da Skill' alt='Nome da skill' />
         <input {...register('descricao', { required: true })} placeholder='Descrição da Skill' alt='descrição da skill' />
-        <input {...register('imagem', { required: true })}  placeholder='URL da imagem da skill' alt='url da imagem da skill' />
+        <input {...register('foto', { required: true })}  placeholder='URL da imagem da skill' alt='url da imagem da skill' />
         <select {...register('categoria', { required: true })}>
             <option value='' disabled>Selecione a categoria</option> 
             {categorias.map(categoria => (
@@ -37,7 +37,7 @@ export default function Anuncie() {
                 </option>
             ))}
         </select>
-        <input {...register('preco', { required: true })} type='number' placeholder='Preço da skill' />
+        <input {...register('preco', { required: true, valueAsNumber: true })} type='number' placeholder='Preço da skill' />
         <Button type='submit'>
             Cadastrar Skill
         </Button>

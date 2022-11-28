@@ -3,6 +3,7 @@ import styles from './Home.module.scss';
 import logo from 'assets/logo-rok.png';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import Button from 'components/Button';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -14,7 +15,11 @@ export default function Home() {
         descricao='As melhores e mais baratas skills de Rise Of The Kings'
         imagem={logo}
         className={styles.header}
-      />
+      >
+        <Button onClick={() => navigate('/anuncie')}>
+          Quero anunciar
+        </Button>
+      </Header>
       <div className={styles.categorias}>
         <div className={styles['categorias-title']}>
           <h1>
