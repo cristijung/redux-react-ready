@@ -22,6 +22,9 @@ Vs 1.1
 
 ![7777](https://user-images.githubusercontent.com/17149877/204332301-d4171556-acd0-466a-9f07-36ea327eb8e7.jpg)
 
+- React Icons - (https://react-icons.github.io/react-icons/) 
+- UUID - (https://github.com/uuidjs/uuid#readme) 
+
 
 ## Scripts
 
