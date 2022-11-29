@@ -2,11 +2,12 @@ import Button from 'components/Button';
 import Header from 'components/Header';
 import Item from 'components/Item';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import styles from './Categoria.module.scss';
 
 
 export default function Categoria() {
+  const navigate = useNavigate()
   const { nomeCategoria } = useParams();
   const { categoria, itens } = useSelector(state => {
     const regexp = new RegExp(state.busca, 'i'); //fazer buscas entre strings case sensitive
@@ -23,7 +24,7 @@ export default function Categoria() {
         descricao={categoria.descricao}
         imagem={categoria.header}
       >
-        <Button>
+        <Button onClick={() => navigate(`/anuncie/${nomeCategoria}`)}>
           Quero anuciar
         </Button>
       </Header>
