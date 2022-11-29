@@ -40,7 +40,9 @@ Você também pode ver erros de lint no console.
 Para testes iremos usar o React Testing Library e/ou Jest
 ### `npm test`
 
-## Documentação:
-Em cada etapa, utilize sempre o README como parte do seu projeto.
+## Projeto:
+Este projeto faz parte de desenvolvimento do módulo de React Redux e foi inspirado nos cursos:
+- React Mutabilidade X Imutabilidade no Redux Toolkit com Immer - Alura
+- React: Gerenciamento de Estados Globais com Redux - Alura
 
 
