@@ -50,5 +50,5 @@ Para testes iremos usar o React Testing Library e/ou Jest
 Este projeto faz parte de desenvolvimento do módulo de React Redux e foi inspirado nos cursos:
 - React Mutabilidade X Imutabilidade no Redux Toolkit com Immer - Alura
 - React: Gerenciamento de Estados Globais com Redux - Alura
-
+________________________________________________________________
 
