@@ -7,6 +7,9 @@ Vs 1
 Vs 1.1
 ![1](https://user-images.githubusercontent.com/17149877/202910978-921b8aea-9844-4fa0-9106-f7a880014959.jpg)
 
+Vs 1.2
+![tela](https://user-images.githubusercontent.com/17149877/204644756-5e01b674-16c2-4e6e-8deb-14f7ccf1870b.jpg)
+
 
 ## Tecnologias usadas
 - React --> (https://reactjs.org/) 
