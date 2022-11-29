@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import { cadastrarItem } from "store/reducers/itens";
 import { useParams } from "react-router-dom";
+import Input from "components/Input";
 
 
 export default function Anuncie() {
@@ -28,9 +29,21 @@ export default function Anuncie() {
         descricao='Anuncie aqui a sua skill no melhor site de troca de ROK'
        />
        <form className={styles.formulario} onSubmit={handleSubmit(cadastrar)}>
-        <input {...register('titulo', { required: true })} placeholder='Nome da Skill' alt='Nome da skill' />
-        <input {...register('descricao', { required: true })} placeholder='Descrição da Skill' alt='descrição da skill' />
-        <input {...register('foto', { required: true })}  placeholder='URL da imagem da skill' alt='url da imagem da skill' />
+        <Input 
+            {...register('titulo', { required: true })} 
+            placeholder='Nome da Skill' 
+            alt='Nome da skill' 
+        />
+        <Input 
+            {...register('descricao', { required: true })} 
+            placeholder='Descrição da Skill' 
+            alt='descrição da skill' 
+        />
+        <Input 
+            {...register('foto', { required: true })}  
+            placeholder='URL da imagem da skill' 
+            alt='url da imagem da skill' 
+        />
         <select 
         {...register('categoria', { required: true })}
         disabled={nomeCategoria}
@@ -42,7 +55,11 @@ export default function Anuncie() {
                 </option>
             ))}
         </select>
-        <input {...register('preco', { required: true, valueAsNumber: true })} type='number' placeholder='Preço da skill' />
+        <Input 
+            {...register('preco', { required: true, valueAsNumber: true })} 
+            type='number' 
+            placeholder='Preço da skill' 
+        />
         <Button type='submit'>
             Cadastrar Skill
         </Button>
