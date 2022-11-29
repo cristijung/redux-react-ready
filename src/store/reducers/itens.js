@@ -206,7 +206,9 @@ const itensSlice = createSlice({
       Object.assign(state[index], payload.item);
     },
     deletarItem: (state, { payload }) => {
-      console.log(payload);
+      const index = state.findIndex(item => item.id === payload); //doc immer recomenda
+      state.splice(index, 1);
+      // return state.filter(item => item.id !== payload);
     }
   }
 });
